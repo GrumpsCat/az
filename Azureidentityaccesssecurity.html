@@ -244,6 +244,125 @@
 
 </main>
 
+  <section id="external-identities">
+  <h2>Describe external identities in Azure</h2>
+
+  <blockquote>
+    <p><strong>
+      What are external identities in Azure, and how are they used to grant access to users
+      outside an organization?
+    </strong></p>
+
+    <ul>
+      <li>
+        An <strong>external identity</strong> is a user, device, or service that exists
+        outside an organization’s Azure tenant.
+      </li>
+      <li>
+        <strong>Microsoft Entra External ID</strong> enables secure collaboration with
+        external users such as partners, vendors, suppliers, and customers.
+      </li>
+      <li>
+        External users can <strong>bring their own identities</strong>, including corporate,
+        government, or social identities (such as Google or Facebook).
+      </li>
+      <li>
+        The external user’s identity provider manages authentication, while access to
+        applications and resources is controlled using <strong>Microsoft Entra ID</strong>
+        or <strong>Azure AD B2C</strong>.
+      </li>
+      <li>
+        External identity capabilities include:
+        <ul>
+          <li>
+            <strong>B2B collaboration</strong> – Allows guest users from other organizations
+            to access enterprise applications and resources.
+          </li>
+          <li>
+            <strong>B2B direct connect</strong> – Establishes trust between Entra tenants for
+            seamless collaboration, such as Teams shared channels.
+          </li>
+          <li>
+            <strong>Azure AD B2C</strong> – Manages identity and access for consumer-facing
+            applications.
+          </li>
+        </ul>
+      </li>
+      <li>
+        Guest access can be governed using <strong>access reviews</strong>, allowing
+        organizations to periodically verify whether external users still require access.
+      </li>
+    </ul>
+
+    <p>
+      <em>Learn more:</em>
+      <a href="https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/4-external-identities"
+         target="_blank" rel="noopener">
+        Microsoft Learn – External identities in Azure
+      </a>
+    </p>
+  </blockquote>
+</section>
+
+  </main>
+<section id="conditional-access">
+  <h2>Describe Microsoft Entra Conditional Access</h2>
+
+  <blockquote>
+    <p><strong>
+      What is Microsoft Entra Conditional Access, and how does it help enforce access
+      policies based on identity signals?
+    </strong></p>
+
+    <ul>
+      <li>
+        <strong>Conditional Access</strong> is a policy-based tool in Microsoft Entra ID that
+        controls access to resources based on identity-related signals.
+      </li>
+      <li>
+        Identity signals include:
+        <ul>
+          <li><strong>Who</strong> the user is</li>
+          <li><strong>Where</strong> the user is signing in from</li>
+          <li><strong>What device</strong> is being used</li>
+          <li><strong>Which application</strong> is being accessed</li>
+        </ul>
+      </li>
+      <li>
+        Conditional Access evaluates signals during sign-in and makes a decision to
+        <strong>allow access</strong>, <strong>block access</strong>, or
+        <strong>require multifactor authentication (MFA)</strong>.
+      </li>
+      <li>
+        It enables <strong>adaptive security</strong>, such as requiring MFA only when a
+        sign-in appears risky or comes from an unusual location.
+      </li>
+      <li>
+        Common Conditional Access use cases include:
+        <ul>
+          <li>Requiring MFA for administrators or remote users</li>
+          <li>Restricting access to approved client applications</li>
+          <li>Allowing access only from compliant or managed devices</li>
+          <li>Blocking access from untrusted or high-risk locations</li>
+        </ul>
+      </li>
+      <li>
+        Conditional Access balances security and productivity by enforcing protection only
+        when needed.
+      </li>
+    </ul>
+
+    <p>
+      <em>Learn more:</em>
+      <a href="https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/5-conditional-access"
+         target="_blank" rel="noopener">
+        Microsoft Learn – Conditional Access
+      </a>
+    </p>
+  </blockquote>
+</section>
+
+
 <footer>
   <p>AZ-900 Azure Fundamentals — Identity, Access, and Security</p>
 </footer>
