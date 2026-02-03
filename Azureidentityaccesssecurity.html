@@ -126,11 +126,59 @@
 
 <section id="authentication-methods">
   <h2>Describe authentication methods</h2>
+
   <blockquote>
     <p><strong>
       What authentication methods are available in Azure, including single sign-on (SSO),
-      multi-factor authentication (MFA), and passwordless authentication?
+      multifactor authentication (MFA), and passwordless authentication?
     </strong></p>
+
+    <ul>
+      <li>
+        <strong>Authentication</strong> is the process of verifying the identity of a user,
+        service, or device by requiring credentials to prove who they are.
+      </li>
+      <li>
+        <strong>Single sign-on (SSO)</strong> allows users to sign in once and access multiple
+        applications and resources using a single identity.
+      </li>
+      <li>
+        <strong>Multifactor authentication (MFA)</strong> requires two or more forms of
+        verification, significantly reducing the risk of credential-based attacks.
+      </li>
+      <li>
+        MFA factors include:
+        <ul>
+          <li><strong>Something you know</strong> (password or PIN)</li>
+          <li><strong>Something you have</strong> (phone or security key)</li>
+          <li><strong>Something you are</strong> (fingerprint or facial scan)</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Passwordless authentication</strong> removes passwords and uses stronger
+        methods such as biometrics, trusted devices, or cryptographic keys.
+      </li>
+      <li>
+        Azure passwordless options include:
+        <ul>
+          <li><strong>Windows Hello for Business</strong></li>
+          <li><strong>Microsoft Authenticator app</strong></li>
+          <li><strong>FIDO2 security keys</strong></li>
+        </ul>
+      </li>
+      <li>
+        <strong>Microsoft Entra multifactor authentication</strong> is the service that
+        enables and manages MFA methods in Azure.
+      </li>
+    </ul>
+
+    <p>
+      <em>Learn more:</em>
+      <a href="https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/3-authentication-methods"
+         target="_blank" rel="noopener">
+        Microsoft Learn – Authentication methods in Azure
+      </a>
+    </p>
   </blockquote>
 </section>
 
@@ -199,71 +247,6 @@
 <footer>
   <p>AZ-900 Azure Fundamentals — Identity, Access, and Security</p>
 </footer>
-
-<section id="authentication-methods">
-  <h2>Describe authentication methods</h2>
-
-  <blockquote>
-    <p><strong>
-      What authentication methods are available in Azure, including single sign-on (SSO),
-      multifactor authentication (MFA), and passwordless authentication?
-    </strong></p>
-
-    <ul>
-      <li>
-        <strong>Authentication</strong> is the process of verifying the identity of a user,
-        service, or device by requiring credentials to prove who they are.
-      </li>
-      <li>
-        <strong>Single sign-on (SSO)</strong> allows users to sign in once and access multiple
-        applications and resources using a single identity, reducing the number of passwords
-        users must manage.
-      </li>
-      <li>
-        <strong>Multifactor authentication (MFA)</strong> requires two or more forms of
-        verification, combining something the user knows, has, or is, which significantly
-        reduces the risk of credential-based attacks.
-      </li>
-      <li>
-        MFA factors include:
-        <ul>
-          <li><strong>Something you know</strong> (for example, a password or PIN)</li>
-          <li><strong>Something you have</strong> (for example, a phone or security key)</li>
-          <li><strong>Something you are</strong> (for example, a fingerprint or facial scan)</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Passwordless authentication</strong> removes passwords entirely and uses
-        stronger methods such as biometrics, devices, or cryptographic keys to authenticate
-        users.
-      </li>
-      <li>
-        Azure supports passwordless authentication through:
-        <ul>
-          <li><strong>Windows Hello for Business</strong>, which uses biometrics or PINs tied
-          to a specific device</li>
-          <li><strong>Microsoft Authenticator app</strong>, which enables phone-based
-          passwordless sign-in using notifications and biometrics</li>
-          <li><strong>FIDO2 security keys</strong>, which provide hardware-based, unphishable
-          authentication</li>
-        </ul>
-      </li>
-      <li>
-        <strong>Microsoft Entra multifactor authentication</strong> is the Azure service that
-        enables and manages MFA methods such as phone calls, text messages, and mobile app
-        notifications.
-      </li>
-    </ul>
-
-    <p>
-      <em>Learn more:</em>
-      <a href="https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/3-authentication-methods"
-         target="_blank" rel="noopener">
-        Microsoft Learn – Authentication methods in Azure
-      </a>
-    </p>
-  </blockquote>
-</section>
 
 </body>
 </html>
